@@ -4,10 +4,17 @@ _export:
       # - file://${repos}
       - https://jitpack.io
     dependencies:
-      - io.digdag.plugin:digdag-chatwork:0.1.0
+      # - io.digdag.plugin:digdag-chatwork:0.1.0
+      - com.github.hizuki-aizawa:digdag-chatwork:0.1.0
 
   api_token: XXXXXXXXXXXXXXXX
   room_id: XXXXXXX
 
 +step1:
   chatwork>: good-template.txt
+
++srep2:
+  _error:
+    chatwork>: danger-template.txt
+  +fail:
+    fail>: error

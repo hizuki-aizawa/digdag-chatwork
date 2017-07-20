@@ -1,4 +1,6 @@
 # digdag-chatwork
+[![](https://jitpack.io/v/hizuki-aizawa/digdag-chatwork.svg)](https://jitpack.io/#hizuki-aizawa/digdag-chatwork)
+[![](https://jitpack.io/v/hizuki-aizawa/digdag-chatwork/month.svg)](https://jitpack.io/#hizuki-aizawa/digdag-chatwork)
 
 ## Description
 digdag-chatwork is a plugin sending messages to chatwork.  
@@ -6,6 +8,11 @@ digdag-chatwork is a plugin sending messages to chatwork.
 reference
 - [digdag-slack](https://github.com/szyn/digdag-slack)
 
+***DEMO:***  
+
+|SUCCESS|FAILED|
+|---|---|
+|[![sample-good.png](sample/imgs/sample-good.png)](sample/imgs/sample-good.png)|[![sample-danger.png](sample/imgs/sample-danger.png)](sample/imgs/sample-danger.png)|
 
 ## Features
 
@@ -30,9 +37,9 @@ Also, you can see expamle workflow at [sample](https://github.com/hizuki-aizawa/
   _export:
     plugin:
       repositories:
-        - file://${repos}
+        - https://jitpack.io
       dependencies:
-        - io.digdag.plugin:digdag-chatwork:0.1.0
+        - com.github.hizuki-aizawa:digdag-chatwork:0.1.0
 
     api_token: XXXXXXXXXXXXXXXX
     room_id: XXXXXXX
@@ -54,7 +61,7 @@ Also, you can see expamle workflow at [sample](https://github.com/hizuki-aizawa/
 
 3. Runs workflow
   ```console
-  $ digdag run chatwork.dig  -p repos=/path/to/digdag-chatwork/build/repo
+  $ digdag run chatwork.dig
   ```
 
 ## License
