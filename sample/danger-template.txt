@@ -1,0 +1,9 @@
+(sweat)
+[info][title]FAILED[/title]Task Name
+${task_name}
+
+Session Date
+${session_date}[/info]
+
+Erro Message
+[code]${error.message}[/code]

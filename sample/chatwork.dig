@@ -1,0 +1,13 @@
+_export:
+  plugin:
+    repositories:
+      # - file://${repos}
+      - https://jitpack.io
+    dependencies:
+      - io.digdag.plugin:digdag-chatwork:0.1.0
+
+  api_token: XXXXXXXXXXXXXXXX
+  room_id: XXXXXXX
+
++step1:
+  chatwork>: good-template.txt
